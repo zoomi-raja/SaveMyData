@@ -7,9 +7,5 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
-    <!-- this tyle to remove title bar-->
-    <style name="generalnotitle" parent="Theme.AppCompat.Light">
-        <item name="android:windowNoTitle">true</item>
-    </style>
 
 </resources>
