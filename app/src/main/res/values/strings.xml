@@ -5,4 +5,5 @@
     <string name="show_hint">Show Hint</string>
     <string name="open_vault">Open Vault</string>
     <string name="protected_vault">Protected Vault</string>
+    <string name="login_fingerprint">Login With Fingerprint?</string>
 </resources>
