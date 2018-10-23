@@ -14,25 +14,31 @@
             android:id="@+id/passField"
             android:background="@drawable/layout_bg"
             app:layout_constraintVertical_chainStyle="spread"
-            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toTopOf="@+id/show_hint"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent">
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp">
         <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:hint="@string/enter_password"
                 android:inputType="textPassword"
-                android:layout_centerInParent="true"
                 android:background="@android:color/transparent"
                 android:maxLength="28"
                 android:gravity="center"
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true"
+                android:layout_toStartOf="@+id/showPass"
+                android:layout_toLeftOf="@+id/showPass"
                 android:id="@+id/userPass"/>
         <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
+                android:maxLength="4"
                 android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
                 android:id="@+id/showPass"
                 android:text="@string/show"/>
     </RelativeLayout>
@@ -49,7 +55,7 @@
             app:layout_constraintTop_toBottomOf="@+id/passField"
             app:layout_constraintBottom_toTopOf="@+id/button"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.501"/>
     <Button
             android:text="@string/open_vault"
             android:layout_width="match_parent"

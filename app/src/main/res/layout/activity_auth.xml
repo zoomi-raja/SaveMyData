@@ -13,22 +13,24 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:maxLines="1"
-            android:text="Save Credentials"
+            android:text="@string/protected_vault"
             android:textColor="#777"
             android:textSize="22sp"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintVertical_bias="0.29000002"/>
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_bias="0.502" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="172dp"/>
     <fragment
+            android:layout_marginTop="50dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:id="@+id/loginFragment"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/stat_2"
             app:layout_constraintStart_toStartOf="@id/stat_2"
             app:layout_constraintEnd_toEndOf="@id/stat_2"
-            android:name="com.example.android.savemydata.Auth.LoginFragment">
+            android:name="com.example.android.savemydata.Auth.LoginFragment"
+            android:layout_marginBottom="100dp">
     </fragment>
 
 </android.support.constraint.ConstraintLayout>
