@@ -6,7 +6,6 @@
 
 
     <RelativeLayout
-            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="10dp"
@@ -28,6 +27,7 @@
                 android:maxLength="28"
                 android:gravity="center"
                 android:layout_centerInParent="true"
+                android:layout_alignParentStart="true"
                 android:layout_alignParentLeft="true"
                 android:layout_toStartOf="@+id/showPass"
                 android:layout_toLeftOf="@+id/showPass"
