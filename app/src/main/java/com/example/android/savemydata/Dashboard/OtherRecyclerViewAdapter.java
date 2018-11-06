@@ -30,7 +30,7 @@ public class OtherRecyclerViewAdapter extends RecyclerView.Adapter<OtherRecycler
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.fragment_other, parent, false);
+                .inflate(R.layout.bank_fragment_item, parent, false);
         return new ViewHolder(view);
     }
 

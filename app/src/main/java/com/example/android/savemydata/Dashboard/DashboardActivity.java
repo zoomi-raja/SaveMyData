@@ -24,10 +24,10 @@ public class DashboardActivity extends AppCompatActivity implements BankFragment
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
         toolbar = getSupportActionBar();
-        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
-        navigation.getMenu().getItem(0).setChecked(true).setIcon(R.drawable.ic_email_yellow_24dp);
+        BottomNavigationView navigation =  findViewById(R.id.navigation);
+//        navigation.getMenu().findItem(R.id.navigation_website).setIcon(R.drawable.ic_email_yellow_24dp);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
-        toolbar.setTitle("WebSites");
+        toolbar.setTitle(R.string.title_medium);
         fm.beginTransaction().add(R.id.frame_container, fragment3, "3").hide(fragment3).commit();
         fm.beginTransaction().add(R.id.frame_container, fragment2, "2").hide(fragment2).commit();
         fm.beginTransaction().add(R.id.frame_container,fragment1, "1").commit();
@@ -40,22 +40,19 @@ public class DashboardActivity extends AppCompatActivity implements BankFragment
             Fragment fragment;
             switch (item.getItemId()) {
                 case R.id.navigation_website:
-                    item.setIcon(R.drawable.ic_email_yellow_24dp);
                     fm.beginTransaction().hide(active).show(fragment1).commit();
                     active = fragment1;
-                    toolbar.setTitle(R.string.title_medium);
+                    toolbar.setTitle(item.getTitle());
                     return true;
                 case R.id.navigation_bank:
-                    item.setIcon(R.drawable.ic_account_balance_wallet_yellow_24dp);
                     fm.beginTransaction().hide(active).show(fragment2).commit();
                     active = fragment2;
-                    toolbar.setTitle(R.string.title_banks);
+                    toolbar.setTitle(item.getTitle());
                     return true;
                 case R.id.navigation_other:
-                    item.setIcon(R.drawable.ic_other_yellow_24dp);
                     fm.beginTransaction().hide(active).show(fragment3).commit();
                     active = fragment3;
-                    toolbar.setTitle(R.string.title_other);
+                    toolbar.setTitle(item.getTitle());
                     return true;
             }
             return false;
