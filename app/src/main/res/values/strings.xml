@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Save My Data</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="show">Show</string>
+    <string name="show_hint">Show Hint</string>
+    <string name="open_vault">Open Vault</string>
+    <string name="protected_vault">Protected Vault</string>
+    <string name="login_fingerprint">Login With Fingerprint?</string>
+    <string name="title_medium">WebSites</string>
+    <string name="title_banks">Banks</string>
+    <string name="title_other">Other</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank website fragment</string>
 </resources>
